@@ -9,7 +9,7 @@ export class ServersComponent {
 
   allowNewServer = false;
   serverCreationStatus = "No server was created!";
-  serverName = '';
+  serverName = 'Testserver';
 
   constructor() { 
     // console.log(this)
