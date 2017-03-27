@@ -1,26 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-directives',
   templateUrl: './directives.component.html',
   styleUrls: ['./directives.component.css']
 })
-export class DirectivesComponent implements OnInit {
+export class DirectivesComponent{
 
   pass = false;
   clicksArray = [];
-  // white: Boolean = false;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  onClick(event) {
+  onToggleDetails() {
     this.pass = !this.pass;
-    this.clicksArray.push(1); 
+    this.clicksArray.push(this.clicksArray.length + 1); 
     console.log(this.clicksArray.length);
-    // this.white = this.clicksArray.length > 4 ? true : false;
   }
 
   tellMe() {
